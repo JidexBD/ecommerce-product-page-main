@@ -43,3 +43,7 @@ img {
 }
 
 /* nav */
+nav {
+  padding: 2rem 1rem;
+  display: flex;
+}
