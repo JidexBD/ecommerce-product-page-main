@@ -1,0 +1,45 @@
+:root {
+  --tc: hsl(219, 9%, 45%);
+  --b: hsl(0, 0%, 0%);
+  --lg: hsl(223, 64%, 98%);
+  --hc: hsl(220, 13%, 13%);
+  --w: hsl(0, 0%, 100%);
+  --org: hsl(26, 100%, 55%);
+  --porg: hsl(25, 100%, 94%);
+}
+
+/* resets and defaults  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  color: var(--tc);
+}
+
+/* utility */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.hidden {
+  display: none;
+}
+img {
+  width: 100%;
+}
+
+/* nav */
