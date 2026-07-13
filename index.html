@@ -35,15 +35,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <nav class="nav">
       <div class="nav-left">
         <button class="menu-btn">
           <img src="images/icon-menu.svg" alt="menu button" class="menu" />
         </button>
 
-        <div class="nav-logo">
-          <img src="images/logo.svg" alt="sneaker logo" class="logo" />
-        </div>
+        <a href="#" target="_self" class="nav-logo">
+          <img src="images/logo.svg" alt="logo" class="logo"
+        /></a>
+
         <ul class="nav-list">
           <li>Collections</li>
           <li>Men</li>
@@ -53,24 +54,37 @@
         </ul>
       </div>
       <div class="nav-right">
-        <ul>
-          <li>
-            <img
-              src="images/icon-cart.svg"
-              alt="shopping cart icon"
-              class="cart"
-            />
-          </li>
-          <li>
-            <img
-              src="images/man.jpg"
-              alt="profile image of a dude "
-              class="prof"
-            />
-          </li>
-        </ul>
+        <button class="cart-btn">
+          <img
+            src="images/icon-cart.svg"
+            alt="shopping cart icon"
+            class="cart"
+          />
+        </button>
+
+        <div class="prof-box">
+          <img
+            src="images/image-avatar.png"
+            alt="profile image of a dude "
+            class="prof"
+          />
+        </div>
       </div>
     </nav>
+
+    <div class="mobile-nav">
+      <button class="close-btn">
+        <img src="images/icon-close.svg" alt="the X button" class="close" />
+      </button>
+
+      <ul class="mobile-nav-list">
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
 
     <main>
       <div class="content">
@@ -111,13 +125,6 @@
         </div>
       </div>
     </main>
-
-    <!-- 
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </footer> -->
 
     <!-- js icon -->
     <script

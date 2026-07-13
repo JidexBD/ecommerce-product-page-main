@@ -26,6 +26,7 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   color: var(--tc);
+  background-color: var(--w);
 }
 
 /* utility */
@@ -33,6 +34,14 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .hidden {
@@ -43,7 +52,164 @@ img {
 }
 
 /* nav */
-nav {
-  padding: 2rem 1rem;
+.nav {
+  padding: 2rem;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+
+/* nav left  */
+.nav-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu-btn {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.menu-btn .menu {
+  width: 18px;
+  height: 18px;
+}
+
+.logo {
+  width: 14rem;
+}
+.nav-list {
+  display: none;
+}
+
+/* nav right */
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.cart-btn {
+  border: none;
+  background-color: white;
+}
+.cart {
+  width: 100%;
+}
+
+.prof-box {
+  width: 2.5rem;
+  border-radius: 120%;
+  border: 1px solid var(--tc);
+  overflow: hidden;
+}
+.prof {
+  /* display: block; */
+  width: 100%;
+}
+
+/* mobile nav */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -260px; /* hidden off-screen */
+  width: 260px;
+  height: 100vh;
+  background: var(--w);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  transition: 0.35s ease;
+  z-index: 999;
+  border: 1px solid var(--tc);
+}
+
+.close-btn {
+  margin-top: 4rem;
+  border: none;
+  background-color: white;
+  align-self: flex-start;
+}
+
+.close {
+  width: 100%;
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2.5rem;
+  margin-top: 4rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.mobile-nav-list li:active,
+.mobile-nav-list li:hover {
+  padding: 1rem 2rem;
+  border: 1px solid var(--tc);
+  border-radius: 10px;
+}
+
+/* active */
+
+.mobile-nav.active {
+  left: 0;
+}
+
+/* tab portrait */
+@media (min-width: 43em) {
+  /* nothing to add here  */
+}
+
+/* landscape */
+@media (min-width: 56em) {
+  .nav {
+    border-bottom: 1px solid var(--lg);
+
+    transition: 0.4s ease-in-out;
+  }
+  .menu-btn {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--tc);
+  }
+
+  .nav-list li:hover {
+    color: var(--org);
+  }
+  .nav-list li:active {
+    color: var(--porg);
+  }
+}
+
+/* laptop */
+@media (min-width: 75em) {
+  .nav {
+    border-bottom: 1px solid var(--lg);
+    padding: 2rem 5rem;
+    gap: 0rem;
+  }
+
+  .logo {
+    width: 100%;
+  }
+  .nav-list {
+    font-size: 1.6rem;
+  }
 }
