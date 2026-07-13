@@ -158,7 +158,6 @@ img {
 }
 
 /* active */
-
 .mobile-nav.active {
   left: 0;
 }
@@ -190,11 +189,11 @@ img {
     color: var(--tc);
   }
 
+  .nav-list li:active,
   .nav-list li:hover {
-    color: var(--org);
-  }
-  .nav-list li:active {
-    color: var(--porg);
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--org);
+    /* color:var(--porg); */
   }
 }
 
