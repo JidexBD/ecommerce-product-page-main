@@ -293,4 +293,17 @@ img {
   right: 2rem;
 }
 
-/* activated */
+/* tab */
+@media (min-width: 43em) {
+}
+
+/* tab landscape  */
+@media (min-width: 43em) {
+}
+
+/* laptop view  */
+
+@media (min-width: 43em) {
+}
+
+/* Right */
