@@ -67,3 +67,21 @@ prevBtn.addEventListener("click", function () {
 });
 
 // the desktop style of this carosuel which is each image click changes the images dispalyed
+
+const displayImg = document.querySelector(".display-img");
+const buttons = document.querySelectorAll(".t-b");
+
+// to get the images in a list
+const deskImages = [
+  "images/image-product-1.jpg",
+  "images/image-product-2.jpg",
+  "images/image-product-3.jpg",
+  "images/image-product-4.jpg",
+];
+
+buttons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    // to select each images by index
+    displayImg.src = deskImages[index];
+  });
+});
