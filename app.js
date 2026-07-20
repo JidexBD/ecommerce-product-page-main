@@ -38,7 +38,7 @@ let current = 0;
 
 function updateSlide() {
   // current is =0 and translate x(0%) when we click next current = 1  translatex = (-100%)
-  // the entire row moves left by one image and we multiply by 100 because each image takes the full width of the carusel
+  // the entire row slides left by one image and we multiply by 100 because each image takes the full width of the carusel
   slides.style.transform = `translateX(-${current * 100}%)`;
 }
 
@@ -47,7 +47,7 @@ nextBtn.addEventListener("click", () => {
   current++;
 
   //returns it back current back to the 1st image when we reach the end
-  if (current >= images.length) {
+  if (current > images.length) {
     current = 0;
   }
 
@@ -85,3 +85,5 @@ buttons.forEach((button, index) => {
     displayImg.src = deskImages[index];
   });
 });
+
+// light box
