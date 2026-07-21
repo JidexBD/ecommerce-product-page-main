@@ -98,12 +98,15 @@ imgClick.addEventListener("click", () => {
   lightBox.classList.add("active");
 });
 
+// close lightbox function
 const closeLightboxBtn = () => {
   lightBox.classList.remove("active");
 };
 
+// close light box button
 closeLightbox.addEventListener("click", closeLightboxBtn);
 
+// closing the lightbox by clicking anywhere on the screen
 document.addEventListener("click", (e) => {
   // not inside the side bar and not on the menu btn
   if (!imgClick.contains(e.target) && !lightGal.contains(e.target)) {
@@ -112,3 +115,23 @@ document.addEventListener("click", (e) => {
 });
 
 // i want to recreate the gallery
+
+const displayImgLight = document.querySelector(".display-img-light");
+const buttonsLight = document.querySelectorAll(".t-b-l");
+
+// to get the images in a list
+const deskImagesLight = [
+  "images/image-product-1.jpg",
+  "images/image-product-2.jpg",
+  "images/image-product-3.jpg",
+  "images/image-product-4.jpg",
+];
+
+buttonsLight.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    // to select each images by index
+    displayImgLight.src = deskImagesLight[index];
+  });
+});
+
+// light box still needs some adjusments
