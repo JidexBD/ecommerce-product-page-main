@@ -597,6 +597,7 @@ light box
   gap: 2rem;
   background-color: var(--org);
   border-radius: 12px;
+  box-shadow: 1rem 2rem 3rem 1rem rgba(243, 143, 29, 0.2);
 }
 
 .add-c:hover,
