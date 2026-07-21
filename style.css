@@ -495,6 +495,7 @@ light box
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding: 2rem;
 }
 
 .top {
@@ -504,4 +505,107 @@ light box
 }
 
 .sub-heading {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--hc);
+  text-transform: capitalize;
+}
+
+.middle {
+  display: flex;
+}
+
+.product-text {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.bottom {
+  display: flex;
+  gap: 2rem;
+}
+
+.price {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--hc);
+}
+
+.discount {
+  color: var(--w);
+  padding: 0.5rem;
+  background-color: var(--b);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.old-price {
+  font-size: 1.8rem;
+  color: var(--tc);
+  font-weight: 600;
+  text-decoration: dashed;
+  margin-left: 8rem;
+}
+
+.cart-box-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.c-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.btn-cc {
+  padding: 1rem 1.5rem;
+  border: none;
+}
+
+.btn-cc:active,
+.btn-cc:hover {
+  border: 1px solid var(--org);
+}
+.btn-quantity {
+  color: var(--hc);
+}
+
+.c-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-c {
+  width: 100%;
+  padding: 2rem 2rem;
+  border: none;
+  color: var(--b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  gap: 2rem;
+  background-color: var(--org);
+  border-radius: 12px;
+}
+
+.add-c:hover,
+.add-c:active {
+  background-color: var(--porg);
+}
+
+.btn-cart-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-block;
 }
