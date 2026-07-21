@@ -87,3 +87,28 @@ buttons.forEach((button, index) => {
 });
 
 // light box
+
+const lightBox = document.querySelector(".light-box-container");
+const imgClick = document.querySelector(".display-box");
+
+const closeLightbox = document.querySelector(".l-close");
+const lightGal = document.querySelector(".desk-gallery-light");
+// open light box
+imgClick.addEventListener("click", () => {
+  lightBox.classList.add("active");
+});
+
+const closeLightboxBtn = () => {
+  lightBox.classList.remove("active");
+};
+
+closeLightbox.addEventListener("click", closeLightboxBtn);
+
+document.addEventListener("click", (e) => {
+  // not inside the side bar and not on the menu btn
+  if (!imgClick.contains(e.target) && !lightGal.contains(e.target)) {
+    closeLightboxBtn();
+  }
+});
+
+// i want to recreate the gallery
