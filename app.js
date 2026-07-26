@@ -26,6 +26,9 @@ document.addEventListener("click", (e) => {
   }
 });
 
+// ********************************************************************
+// *******************************************************************
+
 // mobile caraousel
 const slides = document.querySelector(".mobile-slides");
 

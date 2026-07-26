@@ -337,10 +337,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 40rem;
   }
 
   .display-img {
-    width: 50%;
+    width: 35rem;
     border-radius: 12px;
   }
 
@@ -380,6 +381,13 @@ img {
     margin: 0rem auto;
   }
 
+  .display-box {
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+  }
   .display-img {
     width: 60%;
     border-radius: 12px;
@@ -392,9 +400,9 @@ img {
 }
 
 /* 
-
+***************************************************************
 light box
-
+********************************************************************
 */
 
 @media (min-width: 56em) {
@@ -421,7 +429,7 @@ light box
     display: flex;
     flex-direction: column;
 
-    gap: 2rem;
+    gap: 1rem;
     width: 50rem;
   }
 
@@ -445,7 +453,7 @@ light box
   /* content of light box */
 
   .desk-gallery-light {
-    margin-top: 10rem;
+    margin-top: 3.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -609,4 +617,104 @@ light box
   width: 2.4rem;
   height: 2.4rem;
   display: inline-block;
+}
+
+@media (min-width: 56em) {
+  .content {
+    gap: 2rem;
+  }
+  .right {
+    width: 50rem;
+    margin-top: 4rem;
+    gap: 1rem;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .sub-heading {
+    font-size: 1.2rem;
+  }
+
+  .heading {
+    font-size: 3rem;
+    max-width: 30rem;
+  }
+  .product-text {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    max-width: 30rem;
+  }
+
+  .bottom {
+    display: block;
+  }
+
+  .price {
+    display: inline-block;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--hc);
+    margin-right: 2rem;
+  }
+
+  .discount {
+    display: inline-block;
+    color: var(--w);
+    padding: 0.5rem;
+    background-color: var(--b);
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .old-price {
+    font-size: 1.8rem;
+    color: var(--tc);
+    font-weight: 600;
+    text-decoration: dashed;
+    margin-left: 0rem;
+    margin-top: 2rem;
+  }
+
+  .cart-box-section {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .c-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+    gap: 1.5rem;
+  }
+
+  .btn-cc {
+    padding: 1rem 1.5rem;
+    border: none;
+  }
+
+  .btn-cc:active,
+  .btn-cc:hover {
+    border: 1px solid var(--org);
+  }
+  .btn-quantity {
+    color: var(--hc);
+  }
+
+  .c-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+  }
+
+  .add-c {
+    /* width: 100%; */
+    padding: 1.5rem 4rem;
+  }
 }
