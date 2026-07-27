@@ -138,3 +138,46 @@ buttonsLight.forEach((button, index) => {
 });
 
 // light box still needs some adjusments
+
+// Cart quantity
+const cartQuantityDisplay = document.querySelector(".cart-quantity");
+console.log(cartQuantityDisplay);
+
+const cPlus = document.querySelector(".c-plus");
+const cMinus = document.querySelector(".c-minus");
+
+// cart quantity variable
+let cartQuantity = 0;
+
+// // display quantity
+
+// function displaQuantity() {
+//   cartQuantityDisplay.innerHTML = `${cartQuantity}`;
+// }
+
+// update quantity
+function updateQuantity(change) {
+  cartQuantity += change;
+
+  // Prevent going below 0
+  if (cartQuantity < 0) {
+    cartQuantity = 0;
+  }
+
+  // Prevent going above 10
+  if (cartQuantity > 10) {
+    cartQuantity = 10;
+  }
+
+  cartQuantityDisplay.textContent = cartQuantity;
+}
+
+cPlus.addEventListener("click", () => {
+  updateQuantity(1);
+});
+
+cMinus.addEventListener("click", () => {
+  updateQuantity(-1);
+});
+
+// add to cart

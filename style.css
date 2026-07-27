@@ -386,10 +386,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60rem;
+    width: 55rem;
   }
   .display-img {
-    width: 60%;
+    width: 80%;
     border-radius: 12px;
   }
 
@@ -498,7 +498,13 @@ light box
   }
 }
 
-/* Right */
+/* 
+**************************************************
+*********************************************
+Right
+********************************************************
+
+*/
 .right {
   display: flex;
   flex-direction: column;
@@ -583,7 +589,7 @@ light box
 .btn-cc:hover {
   border: 1px solid var(--org);
 }
-.btn-quantity {
+.cart-quantity {
   color: var(--hc);
 }
 
