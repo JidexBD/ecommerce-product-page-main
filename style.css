@@ -599,7 +599,7 @@ Right
   align-items: center;
 }
 
-.add-c {
+.add-to-cart {
   width: 100%;
   padding: 2rem 2rem;
   border: none;
@@ -614,8 +614,8 @@ Right
   box-shadow: 1rem 2rem 3rem 1rem rgba(243, 143, 29, 0.2);
 }
 
-.add-c:hover,
-.add-c:active {
+.add-to-cart:hover,
+.add-to-cart:active {
   background-color: var(--porg);
 }
 
@@ -719,8 +719,17 @@ Right
     align-items: left;
   }
 
-  .add-c {
+  .add-to-cart {
     /* width: 100%; */
     padding: 1.5rem 4rem;
   }
+}
+
+/* pop up */
+.cart-popup {
+  display: none;
+}
+
+.cart-popup.show {
+  display: block;
 }
