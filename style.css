@@ -27,6 +27,7 @@ body {
   overflow-x: hidden;
   color: var(--tc);
   background-color: var(--w);
+  position: relative;
 }
 
 /* utility */
@@ -599,7 +600,8 @@ Right
   align-items: center;
 }
 
-.add-to-cart {
+.add-to-cart,
+.checkout-btn {
   width: 100%;
   padding: 2rem 2rem;
   border: none;
@@ -727,9 +729,125 @@ Right
 
 /* pop up */
 .cart-popup {
-  display: none;
+  width: 32rem;
+  border: 1px solid var(--lg);
+  border-radius: 8px;
+  background-color: var(--w);
+  position: absolute;
+  padding: 1.5rem;
+  top: 8rem;
+  left: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 1000;
+  display: none; /* js*/
 }
 
-.cart-popup.show {
-  display: block;
+.cart-header {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.cart-header p {
+  font-size: 1.5rem;
+  color: var(--hc);
+  font-weight: 600;
+}
+
+.cart-header hr {
+  color: var(--lg);
+}
+
+.c-empty {
+  margin-top: 3rem;
+  font-size: 2.2rem;
+  text-align: center;
+  display: none; /*js*/
+}
+
+.cart-items {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.delete-btn {
+  border: none;
+  padding: 0.2rem 1rem;
+  border-radius: 1px;
+}
+
+.delete-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.thumb {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 8px;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pr-title {
+  font-size: 1.6rem;
+}
+
+.prices {
+  font-size: 1.6rem;
+}
+
+.prices strong {
+  color: var(--hc);
+}
+
+@media (min-width: 56em) {
+  .cart-popup {
+    top: 8rem;
+    left: 20%;
+  }
+}
+
+@media (min-width: 43em) {
+  .cart-popup {
+    top: 8rem;
+    left: 25%;
+  }
+}
+
+@media (min-width: 56em) {
+  .cart-popup {
+    border: 0.8px solid var(--lg);
+    top: 5rem;
+    left: 70%;
+  }
+}
+
+@media (min-width: 75em) {
+  .cart-popup {
+    border: 0.8px solid var(--lg);
+
+    left: 70%;
+  }
+}
+
+@media (min-width: 90em) {
+  .cart-popup {
+    border: 0.8px solid var(--lg);
+
+    left: 74%;
+  }
+}
+
+@media (min-width: 111em) {
+  .cart-popup {
+    border: 0.8px solid var(--lg);
+    left: 80%;
+  }
 }
